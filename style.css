@@ -74,6 +74,64 @@ img {
 
 /*SOLUZIONE*/
 
+/*Breakpoint Tablet - preso da bootstrap (768px)*/
+@media screen and (max-width: 767px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .row{
+    width: 90%;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    margin: 30px 0;
+  }
+
+  /* #lezioni .row>.left img, */
+  #lezioni .row>.right img{
+    width: 100%;
+    height: auto;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central {
+    float: left;
+    width: 50%;
+    margin: 30px 0;
+  }
+
+  #steps .row>.right {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin: 30px 0;
+  }
+
+  .container.grey h1 {
+    padding: 20px 0;
+  }
+
+  .container.grey h3 {
+    margin: 20px 0;
+  }
+
+  hr{
+    margin: 20px 0;
+  }
+
+}
+
+/*Breakpoint Smartphone (420px)*/
 @media screen and (max-width: 419px) {
 
   *{
@@ -106,6 +164,10 @@ img {
   #why .row>.second,
   #why .row>.third {
     margin: 30px 0;
+  }
+
+  hr{
+    margin: 20px 0;
   }
 
 }
